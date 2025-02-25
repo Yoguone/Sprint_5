@@ -14,5 +14,3 @@ def test_transition_from_lk_to_constructor_successful(driver, authorization):
     constructor_header = driver.find_element(*ElementLocators.CONSTRUCTOR_HEADER)
 
     assert constructor_header.is_displayed()
-
-    driver.quit()

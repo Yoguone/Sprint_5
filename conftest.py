@@ -1,16 +1,27 @@
 import pytest
 from selenium import webdriver
 from locators import ElementLocators
+from random import randint
+
 
 @pytest.fixture()
 def driver():
     chrome_driver = webdriver.Chrome()
     chrome_driver.get('https://stellarburgers.nomoreparties.site/')
-    return chrome_driver
+    yield chrome_driver
+    chrome_driver.quit()
 
 @pytest.fixture()
 def email_password():
     return {'email': 'Andryuschenko15qa@gmail.com', 'password':'123456'}
+
+@pytest.fixture()
+def generate_email():
+    return f'AlexAndr{randint(0, 999)}@yandex.ru'
+
+@pytest.fixture()
+def generate_password():
+    return randint(100000, 999999)
 
 @pytest.fixture()
 def authorization(driver, email_password):

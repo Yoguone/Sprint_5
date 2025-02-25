@@ -16,9 +16,9 @@ class ElementLocators:
     CONSTRUCTOR_BUTTON = (By.XPATH, '//*[@id="root"]/div/header/nav/ul/li[1]/a/p') # Кнопка "Конструктор"
     STELLAR_BURGERS_LOGO = (By.XPATH, '//*[@id="root"]/div/header/nav/div/a') # Логотип Stellar Burgers
     EXIT_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[3]/button') # Кнопка "Выход" в личном кабинете
-    BUN_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]/span') # Кнопка "Булки"
+    BUN_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]') # Кнопка "Булки"
     SAUCE_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]') # Кнопка "Соусы"
-    FILLING_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]/span') # Кнопка "Начинки"
+    FILLING_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]') # Кнопка "Начинки"
     INVALID_PASSWORD = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[3]/div/p') # Сообщение об ошибке "Некорректный пароль"
     PROFILE_NAME = (By.XPATH, '//*[@id="root"]/div/main/div/div/div/ul/li[1]/div/div/input') # Имя пользователя
     LK_LOGIN_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/div/form/button') # Кнопка "Войти" в личном кабинете
